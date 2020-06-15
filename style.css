@@ -119,10 +119,9 @@ main {
 }
 
 #article-header h1 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   margin: 0 20%;
-  padding: 25px 10px;
-  width: 50%;
+  padding: 3% 0;
   font-style: italic;
 }
 
@@ -147,7 +146,7 @@ main {
 }
 
 .article-container {
-  width: 50%;
+  width: 550px;
   margin: 0 auto;
 }
 
@@ -177,7 +176,7 @@ main {
 }
 
 .author-social {
-  width: 30%;
+  width: 40%;
   justify-content: space-between;
 }
 
@@ -214,11 +213,17 @@ article p {
 }
 
 #editors-pick {
-  width: 12%;
+  width: 200px;
   position: absolute;
-  right: 15%;
+  right: 5vw;
   z-index: 999;
-  top: 150vh;
+  top: 2000px;
+}
+
+#editors-pick h4 {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 #editors-pick div img {
@@ -227,7 +232,7 @@ article p {
 }
 
 #editors-pick div {
-  padding: 5px;
+  padding: 10px 0;
   clear: both;
 }
 
@@ -243,5 +248,11 @@ article p {
   .nav-container {
     width: 80%;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #editors-pick {
+    display: none;
   }
 }
