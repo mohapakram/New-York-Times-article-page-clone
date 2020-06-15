@@ -17,6 +17,7 @@ body {
   align-items: center;
 }
 
+/* Fix this */
 .ver-margin-5 {
   margin: 0 10px;
 }
@@ -42,8 +43,14 @@ svg {
 
 nav {
   padding: 5px;
-  justify-content: space-between;
   box-shadow: 0px 1px 1px 0px rgba(148, 143, 143, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav .nav-container {
+  justify-content: space-between;
 }
 
 .nav-icons i {
@@ -83,4 +90,18 @@ nav {
 
 .nav-center {
   align-items: center;
+}
+
+main {
+  position: relative;
+  top: 10vh;
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1140px) {
+  .nav-container {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
