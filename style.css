@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.ver-margin-5 {
+  margin: 0 10px;
+}
+
+.nav-icons i {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-icons i:hover {
+  background-color: #f7f7f7;
+}
+
+.nav-icons i:active,
+.nav-icons i:focus {
+  border: 1px solid black;
+}
+
+nav {
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.nav-left {
+}
