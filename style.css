@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+:root{
+  --primary-text-color: black;
+  --secondary-text-color: #ddd;
+}
+
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 12px;
@@ -243,6 +248,11 @@ article p {
   top: 1.2em;
   font-size: 0.9em;
 }
+
+#inflation {
+  margin: 30px auto;
+}
+
 
 @media only screen and (min-width: 1400px) {
   .nav-container {
