@@ -6,12 +6,44 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
 .flex-container {
   display: flex;
+  align-items: center;
 }
 
 .ver-margin-5 {
   margin: 0 10px;
+}
+
+a {
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+svg {
+  width: auto;
+  height: 30px;
+  padding-top: 2%;
+}
+
+nav {
+  padding: 5px;
+  justify-content: space-between;
+  box-shadow: 0px 1px 1px 0px rgba(148, 143, 143, 0.5);
 }
 
 .nav-icons i {
@@ -29,10 +61,26 @@
   border: 1px solid black;
 }
 
-nav {
-  padding: 10px;
-  justify-content: space-around;
+.strong-link {
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.nav-left {
+.strong-link:hover {
+  text-decoration: underline;
+}
+
+.nav-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background-color: rgb(51, 51, 51);
+}
+
+.nav-center {
+  align-items: center;
 }
