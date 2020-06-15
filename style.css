@@ -9,6 +9,10 @@
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 12px;
+  line-height: 1.5em;
+}
+
+.capital-letters {
   text-transform: capitalize;
 }
 
@@ -26,6 +30,7 @@ a {
   text-decoration: underline;
   color: #000;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 li {
@@ -45,7 +50,7 @@ svg {
   padding-top: 2%;
 }
 
-h1{
+h1 {
   line-height: 1.5em;
 }
 
@@ -105,7 +110,7 @@ nav .nav-container {
 main {
   position: relative;
   top: 10vh;
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
 }
 
@@ -114,10 +119,10 @@ main {
 }
 
 #article-header h1 {
-  font-size: 30px;
+  font-size: 3.5em;
   margin: 0 20%;
   padding: 25px 10px;
-  width: 600px;
+  width: 50%;
   font-style: italic;
 }
 
@@ -136,13 +141,13 @@ main {
   color: #555;
 }
 
-#article-header figure figcaption span{
+#article-header figure figcaption span {
   font-size: 12px;
   color: #888;
 }
 
 .article-container {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -151,7 +156,7 @@ main {
 }
 
 #author h3 {
-  padding: 30px 0;
+  padding: 2% 0;
 }
 
 #author h3 a {
@@ -171,14 +176,67 @@ main {
   color: #333;
 }
 
-.author-social{
+.author-social {
   width: 30%;
   justify-content: space-between;
 }
 
 .author-social li {
-  background-color: #aaa;
-  padding: 6px;
+  background-color: #ddd;
+  padding: 2% 4%;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.author-social li:hover {
+  background-color: white;
+}
+
+.author-social li.solid {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-size: 1.7em;
+}
+
+.author-social li.solid:hover a {
+  color: #ddd !important;
+}
+
+article {
+  font-size: 1.5em;
+  font-weight: light;
+  line-height: 2em;
+}
+
+article p {
+  margin: 10px 0;
+}
+
+#editors-pick {
+  width: 12%;
+  position: absolute;
+  right: 15%;
+  z-index: 999;
+  top: 150vh;
+}
+
+#editors-pick div img {
+  float: left;
+  height: 80px;
+}
+
+#editors-pick div {
+  padding: 5px;
+  clear: both;
+}
+
+#editors-pick div a {
+  float: right;
+  width: 50%;
+  position: relative;
+  top: 1.2em;
+  font-size: 0.9em;
 }
 
 @media only screen and (min-width: 1400px) {
