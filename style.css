@@ -352,7 +352,20 @@ article figure figcaption span {
   justify-content: space-between;
 }
 
-.article-footer-text a @media only screen and (min-width: 1400px) {
+#bottom-section {
+  margin: 100px 30px;
+}
+#bottom-grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.more-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (min-width: 1400px) {
   .nav-container {
     width: 80%;
     margin: 0 auto;
