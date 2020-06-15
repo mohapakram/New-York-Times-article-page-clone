@@ -28,6 +28,10 @@ a {
   font-weight: bold;
 }
 
+li {
+  list-style: none;
+}
+
 button {
   border: none;
   outline: none;
@@ -41,12 +45,18 @@ svg {
   padding-top: 2%;
 }
 
+h1{
+  line-height: 1.5em;
+}
+
 nav {
   padding: 5px;
   box-shadow: 0px 1px 1px 0px rgba(148, 143, 143, 0.5);
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 nav .nav-container {
@@ -95,11 +105,83 @@ nav .nav-container {
 main {
   position: relative;
   top: 10vh;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 1140px) {
+#article-header {
+  text-align: left;
+}
+
+#article-header h1 {
+  font-size: 30px;
+  margin: 0 20%;
+  padding: 25px 10px;
+  width: 600px;
+  font-style: italic;
+}
+
+#article-header figure {
+  width: 100%;
+}
+
+#article-header figure img {
+  width: 100%;
+}
+
+#article-header figure figcaption {
+  width: 75%;
+  padding: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+#article-header figure figcaption span{
+  font-size: 12px;
+  color: #888;
+}
+
+.article-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#author {
+  margin-top: 30px;
+}
+
+#author h3 {
+  padding: 30px 0;
+}
+
+#author h3 a {
+  text-decoration: underline #aaa;
+}
+
+#author h3 a:hover {
+  text-decoration: none;
+}
+
+.author-links {
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.author-links span {
+  color: #333;
+}
+
+.author-social{
+  width: 30%;
+  justify-content: space-between;
+}
+
+.author-social li {
+  background-color: #aaa;
+  padding: 6px;
+}
+
+@media only screen and (min-width: 1400px) {
   .nav-container {
     width: 80%;
     margin: 0 auto;
