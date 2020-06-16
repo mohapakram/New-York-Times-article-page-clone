@@ -352,17 +352,60 @@ article figure figcaption span {
   justify-content: space-between;
 }
 
-#bottom-section {
-  margin: 100px 30px;
-}
 #bottom-grid-container {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  margin: 100px;
+  grid-column-gap: 50px;
 }
 
 .more-articles-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #000;
+  grid-gap: 10px;
+}
+
+.more-articles-grid h3 {
+  grid-column: 1 / -1;
+  margin: 20px 0;
+}
+
+.more-articles-grid h3 a {
+  text-decoration: none;
+}
+
+.more-articles-grid h3 a:hover {
+  text-decoration: underline;
+}
+
+.more-articles-grid-item img {
+  width: 310px;
+}
+
+.more-articles-grid-item h6 {
+  text-align: right;
+  color: var(--secondary-text-color);
+  font-weight: normal;
+}
+
+.more-articles-grid-item a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.more-articles-grid-item a:hover {
+  color: var(--secondary-text-color);
+}
+
+.more-articles-grid-item p {
+  margin-top: 10px;
+  color: var(--secondary-text-color);
+}
+
+.more-popular {
+  margin: 20px 0;
+  border-top: 1px solid black;
 }
 
 @media only screen and (min-width: 1400px) {
