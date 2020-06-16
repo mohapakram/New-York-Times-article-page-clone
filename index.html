@@ -92,30 +92,32 @@
         <h3>By <a href="#" rel="author">Dennis Overbye</a></h3>
         <div class="author-links flex-container">
           <span>March 17, 2014</span>
-          <ul class="flex-container author-social">
-            <li>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-envelope"></i></a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-share"></i>
-              </a>
-            </li>
-            <li class="solid">
-              <a href="#"><i class="far fa-bookmark"></i></a>
-            </li>
-            <li class="solid">
-              <a href="#">
-                <i class="far fa-comment-alt"></i>
-              </a>
-            </li>
-          </ul>
+          <div class="half-width">
+            <ul class="flex-container author-social">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-share"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="solid"><i class="far fa-bookmark"></i></a>
+              </li>
+              <li>
+                <a href="#" class="solid">
+                  <i class="far fa-comment-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -490,69 +492,150 @@
       </article>
     </main>
     <div id="bottom-grid-container">
-      <div class="more-articles-grid">
-        <h3><a href="#">More in Space and Astronomy</a></h3>
-        <div class="more-articles-grid-item">
-          <img src="img/ma1.jpg" alt="ma1" />
-          <h6>JPL/NASA</h6>
-          <a href="#"
-            >Oumuamua: Neither Comet nor Asteroid, but a Cosmic Iceberg
-          </a>
-          <p>6h ago</p>
+      <div>
+        <div class="more-articles-grid">
+          <h3><a href="#">More in Space and Astronomy</a></h3>
+          <div class="more-articles-grid-item">
+            <img src="img/ma1.jpg" alt="ma1" />
+            <h6>JPL/NASA</h6>
+            <a href="#"
+              >Oumuamua: Neither Comet nor Asteroid, but a Cosmic Iceberg
+            </a>
+            <p>6h ago</p>
+          </div>
+          <div class="more-articles-grid-item">
+            <img src="img/ma2.jpg" alt="ma2" />
+            <h6>Bridget Caswell, Alcyon Technical Services/NASA</h6>
+            <a href="#"
+              >NASA Needs to Find Ice on the Moon. This Rover Will Lead the
+              Search.
+            </a>
+            <p>June 11</p>
+          </div>
+          <div class="more-articles-grid-item">
+            <img src="img/ma3.jpg" alt="ma3" />
+            <h6>Image by M. Espinasse et al./Université de Paris/CXC/NASA</h6>
+            <a href="#">Watch This Black Hole Blow Bubbles </a>
+            <p>June 9</p>
+          </div>
+          <div class="more-articles-grid-item">
+            <img src="img/ma4.jpg" alt="ma4" />
+            <h6>NASA</h6>
+            <a href="#"
+              >Astronauts Dock With Space Station After Historic SpaceX Launch
+            </a>
+            <p>June 1</p>
+          </div>
+
+          <div class="more-articles-grid-item">
+            <img src="img/ma5.jpg" alt="ma5" />
+            <h6>Rick Guidice/NASA Ames Research Center</h6>
+            <a href="#">Going Viral, or Not, in the Milky Way </a>
+            <p>June 2</p>
+          </div>
+          <div class="more-articles-grid-item">
+            <img src="img/ma6.jpg" alt="ma6" />
+            <h6>John Raoux/Associated Press</h6>
+            <a href="#"
+              >SpaceX Lifts NASA Astronauts to Orbit, Launching New Era of
+              Spaceflight
+            </a>
+            <p>May 31</p>
+          </div>
         </div>
-        <div class="more-articles-grid-item">
-          <img src="img/ma2.jpg" alt="ma2" />
-          <h6>Bridget Caswell, Alcyon Technical Services/NASA</h6>
-          <a href="#"
-            >NASA Needs to Find Ice on the Moon. This Rover Will Lead the
-            Search.
-          </a>
-          <p>June 11</p>
-        </div>
-        <div class="more-articles-grid-item">
-          <img src="img/ma3.jpg" alt="ma3" />
-          <h6>Image by M. Espinasse et al./Université de Paris/CXC/NASA</h6>
-          <a href="#">Watch This Black Hole Blow Bubbles </a>
-          <p>June 9</p>
-        </div>
-        <div class="more-articles-grid-item">
-          <img src="img/ma4.jpg" alt="ma4" />
-          <h6>NASA</h6>
-          <a href="#"
-            >Astronauts Dock With Space Station After Historic SpaceX Launch
-          </a>
-          <p>June 1</p>
-        </div>
-        <div class="more-articles-grid-item">
-          <img src="img/ma5.jpg" alt="ma5" />
-          <h6>Rick Guidice/NASA Ames Research Center</h6>
-          <a href="#">Going Viral, or Not, in the Milky Way </a>
-          <p>June 2</p>
-        </div>
-        <div class="more-articles-grid-item">
-          <img src="img/ma6.jpg" alt="ma6" />
-          <h6>John Raoux/Associated Press</h6>
-          <a href="#"
-            >SpaceX Lifts NASA Astronauts to Orbit, Launching New Era of
-            Spaceflight
-          </a>
-          <p>May 31</p>
+        <div class="more-articles-grid" id="editors-pick-grid">
+          <h3><a href="#">More in Space and Astronomy</a></h3>
+          <div class="more-articles-grid-item">
+            <img src="img/ma1.jpg" alt="ma1" />
+            <h6>JPL/NASA</h6>
+            <a href="#"
+              >Oumuamua: Neither Comet nor Asteroid, but a Cosmic Iceberg
+            </a>
+            <p>6h ago</p>
+          </div>
+          <div class="more-articles-grid-item">
+            <img src="img/ma2.jpg" alt="ma2" />
+            <h6>Bridget Caswell, Alcyon Technical Services/NASA</h6>
+            <a href="#"
+              >NASA Needs to Find Ice on the Moon. This Rover Will Lead the
+              Search.
+            </a>
+            <p>June 11</p>
+          </div>
+          <div class="more-articles-grid-item">
+            <img src="img/ma3.jpg" alt="ma3" />
+            <h6>Image by M. Espinasse et al./Université de Paris/CXC/NASA</h6>
+            <a href="#">Watch This Black Hole Blow Bubbles </a>
+            <p>June 9</p>
+          </div>
+          <div class="more-articles-grid-item">
+            <img src="img/ma4.jpg" alt="ma4" />
+            <h6>NASA</h6>
+            <a href="#"
+              >Astronauts Dock With Space Station After Historic SpaceX Launch
+            </a>
+            <p>June 1</p>
+          </div>
+
+          <div class="more-articles-grid-item">
+            <img src="img/ma5.jpg" alt="ma5" />
+            <h6>Rick Guidice/NASA Ames Research Center</h6>
+            <a href="#">Going Viral, or Not, in the Milky Way </a>
+            <p>June 2</p>
+          </div>
+          <div class="more-articles-grid-item">
+            <img src="img/ma6.jpg" alt="ma6" />
+            <h6>John Raoux/Associated Press</h6>
+            <a href="#"
+              >SpaceX Lifts NASA Astronauts to Orbit, Launching New Era of
+              Spaceflight
+            </a>
+            <p>May 31</p>
+          </div>
         </div>
       </div>
-      
+
       <div class="more-popular">
         <h3>Most Popular</h3>
         <ul class="most-popular-links">
-          <li><a href="#">Trump’s Niece to Publish Book With ‘Harrowing’ Revelations</a></li>
-          <li><a href="#">Civil Rights Law Protects Gay and Transgender Workers, Supreme Court Rules</a></li>
-          <li><a href="#">Trump’s Halting Walk Down Ramp Raises New Health Questions</a></li>
+          <li>
+            <a href="#"
+              >Trump’s Niece to Publish Book With ‘Harrowing’ Revelations</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              >Civil Rights Law Protects Gay and Transgender Workers, Supreme
+              Court Rules</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              >Trump’s Halting Walk Down Ramp Raises New Health Questions</a
+            >
+          </li>
           <li><a href="#">Opinion: The Court-Martial of Donald J. Trump</a></li>
-          <li><a href="#">Family of Slain Barnard Student Criticizes Sentence for 14-Year-Old</a></li>
-          <li><a href="#">Gorsuch, Conservative Favorite Appointed by Trump, Leads Way on Landmark Decision</a></li>
+          <li>
+            <a href="#"
+              >Family of Slain Barnard Student Criticizes Sentence for
+              14-Year-Old</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              >Gorsuch, Conservative Favorite Appointed by Trump, Leads Way on
+              Landmark Decision</a
+            >
+          </li>
           <li><a href="#">Jon Stewart Is Back to Weigh In</a></li>
           <li><a href="#">They Live Alone in Ghost Towns</a></li>
           <li><a href="#">Opinion: Market Madness in the Pandemic</a></li>
-          <li><a href="#">Oluwatoyin Salau, Missing Black Lives Matter Activist, Is Found Dead</a></li>
+          <li>
+            <a href="#"
+              >Oluwatoyin Salau, Missing Black Lives Matter Activist, Is Found
+              Dead</a
+            >
+          </li>
         </ul>
       </div>
     </div>
