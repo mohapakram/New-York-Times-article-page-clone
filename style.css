@@ -362,7 +362,7 @@ article figure figcaption span {
 #bottom-grid-container {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  margin: 20vh;
+  margin: 20vh 20vh 0 20vh;
   grid-column-gap: 50px;
 }
 
@@ -437,7 +437,32 @@ article figure figcaption span {
 
 #editors-pick-grid {
   margin-top: 50px;
+  grid-template-rows: 60px 0.25fr;
 }
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-top: 1.5px double var(--secondary-text-color);
+  margin: 2vh 20vh 0 20vh;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  margin-top: 2px;
+  border-top: 1px double var(--secondary-text-color);
+}
+
+footer a {
+  grid-column: 1 / -1;
+}
+
+.footer-logo { 
+  height: 60px;
+}
+
 
 @media only screen and (min-width: 1400px) {
   .nav-container {
