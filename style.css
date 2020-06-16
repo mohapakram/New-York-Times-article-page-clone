@@ -18,6 +18,10 @@ body {
   line-height: 1.5em;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .half-width {
   width: 50%;
 }
@@ -150,7 +154,7 @@ main {
 
 #article-header figure figcaption {
   width: 75%;
-  padding: 5px;
+  padding: 5px 0;
   font-size: 14px;
   color: var(--secondary-text-color);
 }
@@ -197,7 +201,7 @@ main {
 
 .author-social a {
   background-color: #ddd;
-  padding: 10px;
+  padding: 5px 6px;
   border-radius: 50%;
   border: 1px solid #ddd;
 }
@@ -303,10 +307,9 @@ article figure img {
 
 article figure figcaption {
   width: 75%;
-  padding: 5px;
+  padding: 5px 0;
   font-size: 14px;
   line-height: 1.5em;
-
   color: var(--secondary-text-color);
 }
 
@@ -444,7 +447,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   border-top: 1.5px double var(--secondary-text-color);
-  margin: 2vh 20vh 0 20vh;
+  margin: 2vh 20vh 10vh 20vh;
   position: relative;
 }
 
@@ -456,14 +459,39 @@ footer::before {
   width: 100%;
 }
 
-footer a {
+#footer-logo-container {
   grid-column: 1 / -1;
+  align-items: center;
+  margin-top: 15px;
 }
 
-.footer-logo { 
+#home-page-link {
+  color: rgb(86, 123, 149);
+  text-decoration: none;
+}
+
+footer ul li {
+  padding: 5px 0;
+}
+
+footer ul li a {
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: light;
+  color: var(--secondary-text-color);
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer ul li h5 {
+  font-weight: bold;
+}
+
+.footer-logo {
   height: 60px;
 }
-
 
 @media only screen and (min-width: 1400px) {
   .nav-container {
