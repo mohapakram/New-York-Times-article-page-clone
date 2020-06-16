@@ -445,14 +445,15 @@ footer {
   grid-template-columns: repeat(6, 1fr);
   border-top: 1.5px double var(--secondary-text-color);
   margin: 2vh 20vh 0 20vh;
+  position: relative;
 }
 
 footer::before {
   content: "";
-  display: block;
-  width: 100%;
+  position: absolute;
   margin-top: 2px;
   border-top: 1px double var(--secondary-text-color);
+  width: 100%;
 }
 
 footer a {
