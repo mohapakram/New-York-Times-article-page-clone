@@ -9,7 +9,7 @@
 :root {
   --primary-text-color: black;
   --primary-btn-text-color: white;
-  --secondary-text-color: #555;
+  --secondary-text-color: #777;
 }
 
 body {
@@ -45,7 +45,7 @@ body {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--primary-text-color);
   font-weight: bold;
   text-transform: capitalize;
@@ -447,8 +447,10 @@ footer {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   border-top: 1.5px double var(--secondary-text-color);
-  margin: 2vh 20vh 10vh 20vh;
+  border-bottom: 1px double var(--secondary-text-color);
+  margin: 2vh 20vh 2vh 20vh;
   position: relative;
+  padding-bottom: 5px;
 }
 
 footer::before {
@@ -491,6 +493,40 @@ footer ul li h5 {
 
 .footer-logo {
   height: 60px;
+}
+
+footer ul:last-child {
+  border-left: 1px solid var(--secondary-text-color);
+  padding-left: 15px;
+}
+
+.footer-icons svg {
+  width: 15px;
+  height: 15px;
+}
+
+#subscribe-icon-links a {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+#education-rate-link {
+  border-bottom: 1px solid var(--secondary-text-color);
+}
+
+#bottom-footer-links {
+  justify-content: space-around;
+  width: 80%;
+  margin: 3vh auto;
+}
+
+#bottom-footer-links a {
+  color: var(--secondary-text-color)
+}
+
+#bottom-footer-links a:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 1400px) {
