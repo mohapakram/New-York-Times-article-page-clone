@@ -10,6 +10,7 @@
   --primary-text-color: black;
   --primary-btn-text-color: white;
   --secondary-text-color: #777;
+  --borders: #e2e2e2;
 }
 
 body {
@@ -18,12 +19,41 @@ body {
   line-height: 1.5em;
 }
 
-.space-between {
-  justify-content: space-between;
+#expand-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  border: 1px solid black;
+  z-index: 888;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  background-color: white;
+}
+
+#expand-btn p {
+  margin: 0 30%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#expand-btn span {
+  text-transform: uppercase;
+}
+
+#expand-btn i {
+  margin: 0 30px;
+  font-size: 1.2em;
 }
 
 .half-width {
   width: 50%;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .full-width {
@@ -99,7 +129,7 @@ nav .nav-container {
 
 .nav-icons i:active,
 .nav-icons i:focus {
-  border: 1px solid black;
+  border: 1px solid var(--borders);
 }
 
 .strong-link {
@@ -203,7 +233,7 @@ main {
   background-color: #ddd;
   padding: 5px 6px;
   border-radius: 50%;
-  border: 1px solid #ddd;
+  border: 1px solid var(--borders);
 }
 
 .author-social a:hover {
@@ -242,7 +272,7 @@ article p {
 #editors-pick h4 {
   margin: 10px 0;
   padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--borders);
 }
 
 #editors-pick div img {
@@ -373,7 +403,7 @@ article figure figcaption span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 60px repeat(2, 0.25fr);
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--borders);
   grid-gap: 15px;
 }
 
@@ -416,7 +446,7 @@ article figure figcaption span {
 
 .more-popular {
   padding: 20px 0;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--borders);
 }
 
 .more-popular ul {
@@ -425,7 +455,7 @@ article figure figcaption span {
 
 .more-popular li {
   padding: 20px 0;
-  border-top: 1px solid var(--secondary-text-color);
+  border-top: 1px solid var(--borders);
 }
 
 .more-popular a {
@@ -446,8 +476,8 @@ article figure figcaption span {
 footer {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  border-top: 1.5px double var(--secondary-text-color);
-  border-bottom: 1px double var(--secondary-text-color);
+  border-top: 1.5px double var(--borders);
+  border-bottom: 1px double var(--borders);
   margin: 2vh 20vh 2vh 20vh;
   position: relative;
   padding-bottom: 5px;
@@ -457,7 +487,7 @@ footer::before {
   content: "";
   position: absolute;
   margin-top: 2px;
-  border-top: 1px double var(--secondary-text-color);
+  border-top: 1px double var(--borders);
   width: 100%;
 }
 
@@ -496,7 +526,7 @@ footer ul li h5 {
 }
 
 footer ul:last-child {
-  border-left: 1px solid var(--secondary-text-color);
+  border-left: 1px solid var(--borders);
   padding-left: 15px;
 }
 
@@ -512,17 +542,19 @@ footer ul:last-child {
 }
 
 #education-rate-link {
-  border-bottom: 1px solid var(--secondary-text-color);
+  border-bottom: 1px solid var(--borders);
 }
 
 #bottom-footer-links {
   justify-content: space-around;
   width: 80%;
-  margin: 3vh auto;
+  margin: 3vh auto 10vh auto;
 }
 
 #bottom-footer-links a {
-  color: var(--secondary-text-color)
+  font-size: 0.85em;
+  font-weight: light;
+  color: var(--secondary-text-color);
 }
 
 #bottom-footer-links a:hover {
