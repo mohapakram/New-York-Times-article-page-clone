@@ -2,16 +2,16 @@
 
 > This assignment consists of making a clone of a New York Times article page.
 
-![screenshot](./screenshot.png)
+![](/screenshot.PNG)
 
 ## Live version
 
-[Live Demo here](https://rawcdn.githack.com/mohapakram/youtube-clone/1183e81d50445ae469c209d528209189e9cf5abd/index.html)
+[Live Demo here](https://rawcdn.githack.com/mohapakram/New-York-Times-article-page-clone/395344766da26a064c300333744dce36a94557db/index.html)
 
 ## Built With
 
-- HTML,
-- Css,
+- HTML5,
+- CSS3,
 
 ## Getting Started
 
@@ -23,11 +23,11 @@ Open index.html file in your browser.
 
 - Github: [@githubhandle](https://github.com/mohabakram)
 
-👤 **Olawale**
+👤 **Nusret**
 
-- Github: [@githubhandle](https://github.com/OlawaleJoseph)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@githubhandle](https://github.com/nusretbutunay)
+- Twitter: [@twitterhandle](https://twitter.com/nusretbutunay)
+- Linkedin: [linkedin](https://linkedin.com/in/nusretbutunay)
 
 ## 🤝 Contributing
 
@@ -47,4 +47,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licens
+This project is [MIT](lic.url) license
