@@ -73,6 +73,10 @@ h1 {
   line-height: 1.5em;
 }
 
+.centered-text {
+  text-align: center;
+}
+
 nav {
   padding: 5px;
   box-shadow: 0 1px 1px 0 rgba(148, 143, 143, 0.5);
@@ -92,6 +96,11 @@ nav .nav-container {
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid transparent;
+}
+
+.expand-btn i {
+  margin: 0 30px;
+  font-size: 1.2em;
 }
 
 .nav-icons i:hover {
@@ -153,8 +162,6 @@ article figure figcaption {
 
 article figure figcaption span {
   font-size: 12px;
-
-  /* color: #888; */
   color: var(--secondary-text-color);
 }
 
@@ -190,6 +197,11 @@ article figure figcaption span {
 .more-articles-grid-item a {
   text-decoration: none;
   font-size: 14px;
+}
+
+.subscribe-to-times a {
+  display: block;
+  color: rgb(50, 104, 145);
 }
 
 .more-articles-grid h3 a {
@@ -295,7 +307,7 @@ article p {
   color: var(--secondary-text-color);
 }
 
-#expand-btn {
+.expand-btn {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -309,26 +321,21 @@ article p {
   background-color: white;
 }
 
-#expand-btn p {
+.expand-btn p {
   margin: 0 30%;
   text-align: center;
   text-transform: capitalize;
 }
 
-#expand-btn span {
+.expand-btn span {
   text-transform: uppercase;
 }
 
-#expand-btn i {
-  margin: 0 30px;
-  font-size: 1.2em;
-}
-
-#inflation-grid-container img {
+.inflation-grid-container img {
   height: 150px;
 }
 
-#inflation-grid-container span {
+.inflation-grid-container span {
   margin-right: 2px;
   color: var(--primary-text-color);
 }
@@ -417,7 +424,7 @@ article {
   margin: 10px 0;
 }
 
-#inflation-grid-container {
+.inflation-grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
@@ -476,9 +483,32 @@ article {
 
 #article-header figure figcaption span {
   font-size: 12px;
-
-  /* color: #888; */
   color: var(--secondary-text-color);
+}
+
+.subscribe-to-times {
+  position: relative;
+  margin: 50px 0;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.subscribe-to-times::before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  top: -40%;
+  border-top: 1px double var(--borders);
+  width: 20%;
+}
+
+.subscribe-to-times::after {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: -40%;
+  border-top: 1px double var(--borders);
+  width: 20%;
 }
 
 #video {
