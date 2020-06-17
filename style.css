@@ -19,6 +19,22 @@ body {
   line-height: 1.5em;
 }
 
+.link-text-underline {
+  text-decoration: underline;
+}
+
+.link-text-underline:hover {
+  text-decoration: none;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
 .half-width {
   width: 50%;
 }
@@ -33,6 +49,10 @@ body {
 
 .capital-letters {
   text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .flex-container {
@@ -85,10 +105,6 @@ nav {
   background-color: #fff;
 }
 
-nav .nav-container {
-  justify-content: space-between;
-}
-
 .nav-icons i {
   padding: 10px;
   cursor: pointer;
@@ -110,10 +126,6 @@ nav .nav-container {
   border: 1px solid var(--borders);
 }
 
-.strong-link {
-  text-transform: uppercase;
-}
-
 .strong-link:hover {
   text-decoration: underline;
 }
@@ -129,15 +141,10 @@ nav .nav-container {
   background-color: rgb(51, 51, 51);
 }
 
-.nav-center {
-  align-items: center;
-}
-
 main {
   position: relative;
   top: 10vh;
   width: 65%;
-  margin: 0 auto;
 }
 
 article figure {
@@ -146,7 +153,6 @@ article figure {
 
 article figure img {
   height: 500px;
-  margin: 0 auto;
 }
 
 article figure figcaption {
@@ -164,10 +170,6 @@ article figure figcaption span {
 
 .author-links span {
   color: var(--primary-text-color);
-}
-
-.author-social {
-  justify-content: space-between;
 }
 
 .author-social a {
@@ -302,12 +304,7 @@ article p {
 
 .expand-btn p {
   margin: 0 30%;
-  text-align: center;
   text-transform: capitalize;
-}
-
-.expand-btn span {
-  text-transform: uppercase;
 }
 
 .inflation-grid-container img {
@@ -321,7 +318,6 @@ article p {
 
 .article-container {
   width: 550px;
-  margin: 0 auto;
 }
 
 #subscribe-icon-links a {
@@ -346,10 +342,6 @@ article p {
 
 #author h3 a {
   text-decoration: underline #aaa;
-}
-
-#bottom-footer-links a:hover {
-  text-decoration: underline;
 }
 
 #author {
